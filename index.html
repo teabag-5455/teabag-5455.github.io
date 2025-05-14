@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="head.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="blob.js"></script>
+</head>
+
+<body>
+    <!-- 導覽列導航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- 導覽列收合區塊 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 導覽列項目 -->
+                <ul class="navbar-nav me-auto mb-1 mb-lg-3">
+                    <!-- 首頁項目 -->
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="index.html">GIDYQ-AA</a>
+                    </li>
+                    <!-- 看看其他項目 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            看看其他
+                        </a>
+                        <!-- 看看其他的下拉選單 -->
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item fs-6" href="index.html">回到首頁</a></li>
+                            <li><a class="dropdown-item fs-6" href="about.html">GIDYQ-AA是什麼?</a></li>
+                            <li><a class="dropdown-item fs-6" href="beforeQue.html">GIDYQ-AA測驗</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <span class="navbar-text fs-5">
+                    不是為了定義，而是為了靠近。
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- 導覽列結尾 -->
+     
+    <h1><br>GIDYQ-AA<span id="stressScore"></span></h1>
+    <p class="subtitle">
+      <br>
+        一份用於測量性別認同與性別不安的問卷
+    </p>
+
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary"><a href="about.html">看 看 介 紹</a></button>
+        <button type="button" class="btn btn-outline-primary"><a href="beforeQue.html">測 驗 入 口</a></button>
+    </div>
+
+
+    <div class="blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+body {
+  background-color: #e6e6e6;
+  /* 背景顏色為淺灰色 */
+}
+
+form {
+  border: 1px solid #FFFFFF;
+  /* 表單的框線顏色為白色 */
+  padding: 20px;
+  /* 增加表單的內邊距 */
+}
+
+.exam_content {
+  border: 1px solid #FFFFFF;
+  /* 問題與問題間的框線顏色為白色 */
+  background-color: #FFFFFF;
+  /* 表單內容填色背景顏色為白色 */
+  margin-top: 10px;
+  /* 增加問題區塊之間的上邊距 */
+  padding: 10px;
+  /* 增加問題區塊的內邊距 */
+  line-height: 20px;
+  /* 每個問題的行高為20px */
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.question {
+  flex: 9;
+  text-align: left;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 500px) {
+  input[type="radio"] {
+    transform: scale(1.0);
+  }
+}
+
+.line {
+  height: 3px;
+  background-color: #2F6690;
+}
+
+.btn {
+  width: 100px;
+  /* 調整寬度 */
+  height: 50px;
+  /* 調整高度 */
+  padding: 0;
+  margin-top: 20px;
+  border: 3px solid #CED0CE;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: inherit;
+  position: relative;
+  overflow: hidden;
+  color: #2F6690;
+  /* 文字顏色 */
+  font-weight: 1000;
+  /* 粗體 */
+  transition: background-color 0.2s, color 0.2s;
+  /* 添加過渡效果 */
+}
+
+.btn:hover {
+  background-color: #2F6690;
+  /* 鼠標懸停時的背景顏色 */
+  border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+  /* 鼠標懸停時的文字顏色 */
+}
+
+.btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+  /* 確保<a>元素位於按鈕的上方 */
+}
+
+/**/
+
+:root {
+  --cr-main-1: #0ad6ff;
+  --cr-main-2: #fc80e1;
+  --cr-1: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 20%);
+  --cr-2: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 35%);
+  --cr-3: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 50%);
+  --cr-4: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 65%);
+  --cr-5: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 80%);
+}
+
+.blobs {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: blur(140px);
+}
+
+.blob {
+  width: max(240px, 28vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blob:nth-of-type(1) {
+  background: var(--cr-main-1);
+}
+
+.blob:nth-of-type(2) {
+  background: var(--cr-main-2);
+}
+
+.blob:nth-of-type(3) {
+  background: var(--cr-1);
+}
+
+.blob:nth-of-type(4) {
+  background: whitesmoke;
+}
+
+.blob:nth-of-type(5) {
+  background: var(--cr-3);
+}
+
+.blob:nth-of-type(6) {
+  background: var(--cr-4);
+}
+
+.blob:nth-of-type(7) {
+  background: var(--cr-2);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 20px;
+  background:
+    linear-gradient(#2F6690 0 0) 0/0% no-repeat #ddd;
+  animation: l1 2s infinite linear;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  z-index: 10;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+.loader.visible {
+  opacity: 1;
+}
+
+@keyframes l1 {
+  100% {
+    background-size: 100%
+  }
+}
+

@@ -1,0 +1,38 @@
+/* 導覽 */
+.navbar {
+    height: 10vh; /* 设置导航栏高度为屏幕高度的10% */
+  }
+  
+  .navbar-nav {
+    padding-top: 20px; /* 调整内边距 */
+    height: 80%; /* 设置导航栏高度 */
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 20px; /* 调整右边距 */
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .dropdown-item {
+    font-size: 1.5rem; /* 下拉菜单项字体大小 */
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .navbar-text {
+    margin-left: auto; /* 将文本推向导航栏的最右边 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .navbar-collapse.show {
+    background-color: #5a5959; /* 设置灰色背景色 */
+    padding: 10px; /* 添加一些内边距以增加可读性 */
+  }
+  /* 索引欄結束 */
+  

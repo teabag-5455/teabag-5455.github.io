@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+h1 {
+  font-size: 400%;
+  color: #2F6690;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.subtitle {
+  color: #333333;
+  /* 深灰色 */
+  text-align: center;
+  /* 中央對齊式 */
+  font-size: 1.2em;
+  /* 百分比尺寸 */
+  line-height: 1.5;
+  /* 行高 */
+  margin: 20px;
+  opacity: 0.8;
+  
+}
+
+.disclaimer {
+  font-size: 80%;
+  color: #555;
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* 按鈕 */
+.btn-group a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-outline-primary {
+  color: #ffffff; /* 设置文字颜色为白色 */
+  border-color: rgba(255, 255, 255); /* 设置边框颜色为白色，透明度50% */
+  font-size: 160%; /* 放大按钮字体 */
+  justify-content: center; /* 水平居中 */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+/* 鼠标悬停时改变背景色和边框色 */
+.btn-outline-primary:hover {
+  background-color: rgba(79, 153, 193, 0.5); /* 鼠标悬停时增加透明度 */
+  border-color: rgba(255, 255, 255, 0.7); /* 鼠标悬停时边框颜色稍微加深 */
+}
+
+.btn-group {
+    display: flex;
+    bottom: 0;
+    justify-content: center; /* 水平居中 */
+    width: 60vw; /* 设置按钮组占屏幕宽度的80% */
+    margin: 20px auto; /* 将按钮组居中，并设置上边距 */
+    margin: 5% auto 0; 
+}
+
+/*流動背景*/
+
+:root {
+  --cr-main-1: #2ac9de;
+  --cr-main-2: #f087f4;
+  --cr-1: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 20%);
+  --cr-2: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 35%);
+  --cr-3: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 50%);
+  --cr-4: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 65%);
+  --cr-5: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 80%);
+}
+
+.blobs {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: blur(140px);
+}
+
+.blob {
+  width: max(240px, 28vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blob:nth-of-type(1) {
+  background: var(--cr-main-1);
+}
+
+.blob:nth-of-type(2) {
+  background: var(--cr-main-2);
+}
+
+.blob:nth-of-type(3) {
+  background: var(--cr-1);
+}
+
+.blob:nth-of-type(4) {
+  background: whitesmoke;
+}
+
+.blob:nth-of-type(5) {
+  background: var(--cr-3);
+}
+
+.blob:nth-of-type(6) {
+  background: var(--cr-4);
+}
+
+.blob:nth-of-type(7) {
+  background: var(--cr-2);
+}
